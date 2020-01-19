@@ -1,0 +1,1 @@
+c:\wamp\bin\php\php5.2.6\php.exe -f c:\wamp\www\deepblue08\dive\search\base.php

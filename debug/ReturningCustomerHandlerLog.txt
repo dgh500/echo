@@ -1,0 +1,449 @@
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 22 May 2009 13:55:35 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: cptbse4nh8e079h1seppmceg56
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 22 May 2009 13:57:53 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: k7qhb7eqbskcv74c2orifktqt5
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 22 May 2009 14:08:50 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: e39ojriobfbuhr7se3k100k770
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 22 May 2009 14:12:20 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: v3ifnskpkndga58nb1rgv4co60
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 22 May 2009 15:10:59 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: ndr2hbssr497abudq1fm43eul0
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 22 May 2009 15:14:08 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: k69fgqcthe3ul58il8oag679g6
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 22 May 2009 17:17:15 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: eb9g7ul42a0sugrbhto4t87406
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 29 May 2009 16:26:11 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: nsjqig6gk4vjj9rfijpob2b9h4
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Mon, 01 Jun 2009 09:35:08 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 0c8r1n0rqbnm9q1dpj4sfu7i36
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Mon, 01 Jun 2009 10:53:17 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: v5c0vvcqh7sfe6oq4pr58be0a2
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Mon, 01 Jun 2009 10:58:42 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 29oqt218ps2g5foao79huk5nq5
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Mon, 01 Jun 2009 11:11:22 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 5hs0hvqp8nl6q25odsupurke64
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Mon, 01 Jun 2009 11:40:42 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: u8i8a3t1jj0l7m2osq7sg5hdu2
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Tue, 02 Jun 2009 10:11:19 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: r22bmm3bvqdd97bjso1pi1dhh0
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Tue, 02 Jun 2009 10:13:24 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: adlleelfbg3qq8m5nhdq3vp5d4
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 04 Jun 2009 09:40:01 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: o3bgtia9ke0ld95ineti8li0c0
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 04 Jun 2009 09:44:33 +0100)
+Browser: IE
+Version: 7.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: j2nl97bjsq9f2mpht1m0946db7
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 04 Jun 2009 10:05:11 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: j5kef44bhhb5sjmebc4alcls97
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 04 Jun 2009 10:07:27 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 2et3591tel0cbce7op7lec8df4
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 04 Jun 2009 10:15:08 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 25bjol6j11ut2ok02imjbqkjh2
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 04 Jun 2009 10:36:49 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: aomfui3ate91sai7mg97p0oka3
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 04 Jun 2009 10:39:44 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: tf6ah6ndcbnpbm5bilsb2udka6
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Tue, 09 Jun 2009 09:56:05 +0100)
+Browser: Firefox
+Version: 3.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: emlbhku3nd62mof31fca02ofe6
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 17 Jul 2009 12:51:38 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: ihv8cc82qp37fu35k8uk9gl1a6
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 17 Jul 2009 12:54:22 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 42g16p52bi1irjdsh2qfe8ntp0
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 17 Jul 2009 13:01:03 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: v1bmg8eplvadeih2juhe0u0fe5
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Tue, 21 Jul 2009 16:42:42 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 56fq5rloaaavn8fk54unqnm5d1
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Wed, 29 Jul 2009 10:00:40 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: r6s6dm0s40pqaolm2vid573sr0
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Wed, 29 Jul 2009 10:02:29 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: b14bhlv06o4ct7on0mcr7tqd51
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Wed, 29 Jul 2009 10:04:36 +0100)
+Browser: IE
+Version: 7.0
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 7bon2ie576pn8u6c5f2978umt7
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 14 Aug 2009 11:30:07 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: au84t1n9bkn295d7gtklh525j7
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 14 Aug 2009 14:21:20 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: m5qteip1ojen4s7tlk733rgap3
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 14 Aug 2009 14:23:40 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: k86p5jg3g3guochgaqr3osegi5
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 27 Aug 2009 15:07:22 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: ibq97isd5tbb2gr6gq91m85bo0
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 27 Aug 2009 15:27:10 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 4t8qvu0cbg3nlbc369ble335k2
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 27 Aug 2009 15:32:33 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: r0dndhm0bbcrve1geiii5of2d7
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 27 Aug 2009 15:38:57 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: pbup1uocq6pgu782tdpn7g6qk2
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Thu, 27 Aug 2009 15:39:32 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: qu4ilhj11l8ug14d244lmjmvi7
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 28 Aug 2009 11:21:05 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 2uarcgnhn0cqi2iguet1kfs1e1
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Fri, 28 Aug 2009 13:21:14 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 3j9cflgau42v6imek24romsf77
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Wed, 30 Sep 2009 10:28:47 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 6nvq7l4il26jq6gtn4eo0n69u1
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Mon, 05 Oct 2009 11:53:00 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: vvp4b33g9ddppjdjgq99qcemu7
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Mon, 05 Oct 2009 15:20:20 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: nf051t3oift2ie31jrmqilvjn4
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Tue, 13 Oct 2009 14:53:38 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 6t690hffhc4gqjn0veibogsa13
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Tue, 13 Oct 2009 14:58:43 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 0ra1rs2nd3jiv4e1n50lequag5
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Tue, 13 Oct 2009 15:03:07 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 7qte4ps40i51e4p878r6u7eod6
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Tue, 13 Oct 2009 15:07:11 +0100)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: vpbioui6k4s9sr2uq7gt12nd67
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Sun, 25 Oct 2009 11:28:33 +0000)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: ospocfplu5eql08bn5vnnrk7t5
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Mon, 26 Oct 2009 13:53:11 +0000)
+Browser: Mozilla
+Version: 1.9
+Platform: WinXP
+IP Address: 192.168.1.125
+Basket ID: 8tsirjl46o2hj3tspt28kf77c0
+ -> Login Success
+ -> Redirecting to address entry stage 
+--------------------------------------------------------------
+Returning Customer Handler Log Started (Tue, 05 Jan 2010 21:43:25 +0000)
+Browser: 
+Version: 
+Platform: 
+IP Address: 78.149.99.170
+Basket ID: 5fb21b9dd9120144dd3985501a9b0b6d
+ -> Login Failure - Wrong Password

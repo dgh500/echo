@@ -1,0 +1,2 @@
+<p>Copyright Echo Supplements 2010 | 919 Yeovil Road, Slough, Berkshire SL1 4NH<br />
+<a href="http://www.echosupplements.com">Home</a> | <a href="http://www.echosupplements.com/about-echo-supplements/0">About Us</a> | <a href="http://www.echosupplements.com/about-echo-supplements/0">Contact Us</a> | <a href="http://www.echosupplements.com/content/7/terms-and-conditions">Terms &amp; Conditions</a> | <a href="http://www.echosupplements.com/returns-policy/0">Returns</a> | <a href="http://www.echosupplements.com/shipping-costs/0">Shipping</a></p>

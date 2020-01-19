@@ -1,0 +1,36 @@
+Adding sku 1378883 to array line 89. 
+Adding sku 1378883 to array line 89. 
+Adding sku 1378883 to array line 89. 
+Adding upgrade Suunto CB-Three in Line to basket line 111. 
+Adding sku 1378864 to array line 146. 
+Adding sku 1390399 to array line 165. 
+Adding package product SCUBAPRO BELLA BCD to basket line 119. 
+Adding sku 1381072 to array line 165. 
+Adding package product Scubapro MK11/R295 Regulator to basket line 119. 
+Adding upgrade Scubapro R395 Octopus to basket line 111. 
+Adding sku 1378883 to array line 146. 
+Adding sku 1387394 to array line 146. 
+Adding package product Beaver Sentinel Double Console to basket line 119. 
+Adding sku 1390397 to array line 165. 
+Adding package product SCUBAPRO BELLA BCD to basket line 119. 
+Adding sku 1381071 to array line 165. 
+Adding package product Scubapro MK11/R295 Regulator to basket line 119. 
+Adding upgrade Scubapro R395 Octopus to basket line 111. 
+Adding sku 1378883 to array line 146. 
+Adding package to basket line 395. 
+Adding package to basket line 395. 
+SKUs to add: 11 
+Adding SKU 1378883 to basket line 442. 
+Running total ++  486. 
+Adding SKU 1378883 to basket line 442. 
+Running total ++  486. 
+Running total ++ 110.0 478. 
+Adding SKU 1378864 to basket line 442. 
+Running total ++  486. 
+Adding SKU 1390399 to basket line 447. 
+Adding SKU 1381072 to basket line 447. 
+Running total ++  486. 
+Adding SKU 1387394 to basket line 447. 
+Adding SKU 1390397 to basket line 447. 
+Adding SKU 1381071 to basket line 447. 
+Running total ++  486. 

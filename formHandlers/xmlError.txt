@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EngineDocList>
+ <DocVersion DataType="String">1.0</DocVersion>
+ <EngineDoc>
+  <ContentType DataType="String">OrderFormDoc</ContentType>
+  <DocumentId DataType="String">48cdcc1a-784b-3003-002a-0003bac62f71</DocumentId>
+  <Instructions>
+   <Pipeline DataType="String">Payment</Pipeline>
+
+  </Instructions>
+  <MessageList>
+   <MaxSev DataType="S32">6</MaxSev>
+   <Message>
+    <AdvisedAction DataType="S32">16</AdvisedAction>
+    <Audience DataType="String">Merchant</Audience>
+    <Component DataType="String">CcxOcc</Component>
+    <ContextId DataType="String">Component</ContextId>
+    <DataState DataType="S32">3</DataState>
+    <FileLine DataType="S32">1150</FileLine>
+    <FileName DataType="String">CcxOccExecute.cpp</FileName>
+    <FileTime DataType="String">15:18:59Oct 13 2007</FileTime>
+    <ResourceId DataType="S32">19</ResourceId>
+    <Sev DataType="S32">6</Sev>
+    <Text DataType="String">Card length 0 is not valid.</Text>
+
+   </Message>
+
+  </MessageList>
+  <OrderFormDoc>
+   <Consumer>
+    <BillTo>
+     <Location>
+      <Address>
+       <City DataType="String">Whitley Bay</City>
+       <Country DataType="String">826</Country>
+       <FirstName DataType="String">John Paul</FirstName>
+       <LastName DataType="String">Gardner</LastName>
+       <Name DataType="String">John Paul Gardner</Name>
+       <PostalCode DataType="String">NE26 2JW</PostalCode>
+       <Street1 DataType="String">55 St Aidans Court</Street1>
+
+      </Address>
+      <Id DataType="String">48cdcc1a-784d-3003-002a-0003bac62f71</Id>
+
+     </Location>
+
+    </BillTo>
+    <PaymentMech>
+     <CreditCard>
+      <Cvv2Indicator DataType="String">1</Cvv2Indicator>
+      <Cvv2Val DataType="String">797</Cvv2Val>
+      <Expires DataType="ExpirationDate">01/2011</Expires>
+      <IssueNum DataType="String">issueNumber</IssueNum>
+      <Number DataType="String">cardNumber</Number>
+
+     </CreditCard>
+     <Type DataType="String">CreditCard</Type>
+
+    </PaymentMech>
+
+   </Consumer>
+   <DateTime DataType="DateTime">1221472290312</DateTime>
+   <GroupId DataType="String">ECHO81234567</GroupId>
+   <Id DataType="String">ECHO81234567</Id>
+   <Mode DataType="String">Y</Mode>
+   <Transaction>
+    <CurrentTotals>
+     <Totals>
+      <Total DataType="Money" Currency="826">1</Total>
+
+     </Totals>
+
+    </CurrentTotals>
+    <Id DataType="String">48cdcc1a-784c-3003-002a-0003bac62f71</Id>
+    <Type DataType="String">PreAuth</Type>
+
+   </Transaction>
+
+  </OrderFormDoc>
+  <Overview>
+   <CcErrCode DataType="S32">1067</CcErrCode>
+   <CcReturnMsg DataType="String">System error.</CcReturnMsg>
+   <DateTime DataType="DateTime">1221472290312</DateTime>
+   <Mode DataType="String">Y</Mode>
+   <Notice DataType="String">Card length 0 is not valid.</Notice>
+   <OrderId DataType="String">ECHO81234567</OrderId>
+   <TransactionId DataType="String">48cdcc1a-784c-3003-002a-0003bac62f71</TransactionId>
+   <TransactionStatus DataType="String">E</TransactionStatus>
+
+  </Overview>
+  <User>
+   <Alias DataType="String">UK03736541GBP</Alias>
+   <ClientId DataType="S32">14355</ClientId>
+   <EffectiveAlias DataType="String">UK03736541GBP</EffectiveAlias>
+   <EffectiveClientId DataType="S32">14355</EffectiveClientId>
+   <Name DataType="String">samsung1</Name>
+   <Password DataType="String">XXXXXXX</Password>
+
+  </User>
+
+ </EngineDoc>
+ <TimeIn DataType="DateTime">1221472290308</TimeIn>
+ <TimeOut DataType="DateTime">1221472290314</TimeOut>
+
+</EngineDocList>

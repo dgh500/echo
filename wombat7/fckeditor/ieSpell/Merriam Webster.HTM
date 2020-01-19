@@ -1,0 +1,35 @@
+<html>
+<body>
+<script language="JavaScript" defer>
+<!-- 
+// Get the window object where the context menu was opened.
+var oWindow = window.external.menuArguments;
+
+// Get the document object exposed through oWindow.
+var oDocument = oWindow.document;
+
+// Get the selection from oDocument.
+// in oDocument.
+var oSelect = oDocument.selection;
+
+// Create a TextRange from oSelect.
+var oSelectRange = oSelect.createRange();
+
+// Get the text of the selection.
+var sNewText = oSelectRange.text;
+
+// Get the name of the lookup item
+var sURL = window.location.pathname;
+var sRCMItem = sURL.substring(sURL.lastIndexOf("\\")+1, sURL.length-4);
+
+try {
+var SpellChecker = new ActiveXObject("ieSpell.ieSpellExtension");
+SpellChecker.Lookup(external.menuArguments, sRCMItem, sNewText);
+delete spellchecker;
+} catch (e) {
+	alert("Exception raised! "+e.message);
+}
+-->
+</script>
+</body>
+</html>

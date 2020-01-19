@@ -1,0 +1,236 @@
+Options -Indexes
+
+# Begin Cache Control
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/ico "access plus 1 years"
+ExpiresByType image/icon "access plus 1 years"
+ExpiresByType image/x-icon "access plus 1 years"
+ExpiresByType text/javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType text/ecmascript "access plus 1 month"
+</IfModule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css text/js application/x-javascript application/javascript
+</IfModule>
+
+<FilesMatch "\\.(js|css|html|htm|php|xml)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+RewriteEngine on
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+
+## Simple One-to-One rules
+RewriteRule ^home$ index.php [L]
+RewriteRule ^about$ about.php [L]
+RewriteRule ^account$ myAccount.php [L]
+RewriteRule ^affiliateArea$ affiliates.php [L]
+RewriteRule ^advice$ articles.php [L]
+RewriteRule ^advice/([0-9]*)$ content.php?id=$1 [L]
+RewriteRule ^advice/([0-9]*)/(.*)$ content.php?id=$1 [L]
+RewriteRule ^bestSellers$ bestSeller.php [L]
+RewriteRule ^brands$ manufacturers.php [L]
+RewriteRule ^account/orderTracking$ myAccount.php?page=track [L]
+RewriteRule ^boditronics$ /content/21/boditronics-company-profile [L]
+RewriteRule ^met-rx$ /content/23/met-rx-company-profile [L]
+RewriteRule ^account/myDetails$ myAccount.php?page=details [L]
+RewriteRule ^account/changeMyDetails$ myAccount.php?page=changeDetails [L]
+RewriteRule ^account/changeMyPassword$ myAccount.php?page=changePassword [L]
+RewriteRule ^account/passwordSuccess$ myAccount.php?page=passwordSuccess [L]
+RewriteRule ^account/passwordFailure$ myAccount.php?page=passwordFailure [L]
+RewriteRule ^account/passwordReset$ myAccount.php?page=passwordReset [L]
+RewriteRule ^account/forgottenPassword$ myAccount.php?page=forgottenPassword [L]
+RewriteRule ^account/order/(.*)$ myAccount.php?page=order&id=$1 [L]
+RewriteRule ^account/receipt/(.*)$ myAccount.php?page=receipt&id=$1 [L]
+RewriteRule ^affiliates$ affiliates.php [L]
+RewriteRule ^brochure$ brochure.php [L]
+RewriteRule ^brochure/failure/send$ brochure.php?failure=send [L]
+RewriteRule ^brochure/failure/valid$ brochure.php?failure=valid [L]
+RewriteRule ^brochure/success$ brochure.php?failure=none [L]
+RewriteRule ^checkout$ checkout.php [L]
+RewriteRule ^checkout/$ checkout.php [L]
+RewriteRule ^checkout/forgot$ checkout.php?forgot=1 [L]
+RewriteRule ^checkout/success$ checkout.php [L]
+RewriteRule ^checkout/failure$ checkout.php [L]
+RewriteRule ^checkout/3DAuth$ checkout.php [L]
+RewriteRule ^checkout/threeDSecureComplete$ checkout.php?threeDSecureComplete=1 [L]
+RewriteRule ^checkout/threeDSecureSuccess$ checkout.php?threeDSecureComplete=1 [L]
+RewriteRule ^checkout/threeDSecureFailureError$ checkout.php?threeDSecureComplete=1 [L]
+RewriteRule ^checkout/threeDSecureFailureCard$ checkout.php?threeDSecureComplete=1 [L]
+RewriteRule ^clearance$ department/clearance/24 [L]
+RewriteRule ^contact$ contact.php [L]
+RewriteRule ^content/([0-9]*)$ content.php?id=$1 [L]
+RewriteRule ^content/([0-9]*)/(.*)$ content.php?id=$1 [L]
+RewriteRule ^feedback$ feedback.php [L]
+RewriteRule ^feedback/failure/send$ feedback.php?failure=send [L]
+RewriteRule ^feedback/failure/valid$ feedback.php?failure=valid [L]
+RewriteRule ^feedback/success$ feedback.php?failure=none [L]
+RewriteRule ^links$ links.php [L]
+RewriteRule ^newsletter/success$ newsletter.php?success=yes [L]
+RewriteRule ^offers$ offers.php [L]
+RewriteRule ^orderTracking$ orderTracking.php [L]
+RewriteRule ^orderTracking/(.*)$ orderTracking.php?id=$1 [L]
+RewriteRule ^postalRates$ postalRates.php [L]
+RewriteRule ^priceMatch$ priceMatch.php [L]
+RewriteRule ^priceMatch/failure/send$ priceMatch.php?failure=send [L]
+RewriteRule ^priceMatch/failure/valid$ priceMatch.php?failure=valid [L]
+RewriteRule ^priceMatch/success$ priceMatch.php?failure=none [L]
+RewriteRule ^privacy$ privacy.php [L]
+RewriteRule ^q/(.*)$ searchResults.php?q=$1 [L]
+RewriteRule ^returns$ returns.php [L]
+RewriteRule ^sitemap$ sitemap.php [L]
+RewriteRule ^tags$ tags.php [L]
+RewriteRule ^terms$ terms.php [L]
+RewriteRule ^topBrands$ topBrands.php [L]
+RewriteRule ^topStacks$ topStacks.php [L]
+RewriteRule ^training$ training.php [L]
+
+### Session ID Passing
+RewriteRule ^(.*)/(.*)/product/(.*)/(.*)/s/(.*)$ product.php?productId=$4&s=$5 [L]
+RewriteRule ^(.*)/(.*)/package/(.*)/(.*)/s/(.*)$ package.php?packageId=$4&s=$5 [L]
+RewriteRule ^account/s/(.*)$ myAccount.php?s=$1 [L]
+RewriteRule ^affiliateArea/s/(.*)$ affiliates.php?s=$1 [L]
+RewriteRule ^basket$ basket.php [L]
+RewriteRule ^basket/s/(.*)$ basket.php?s=$1 [L]
+RewriteRule ^checkout/s/(.*)/aid/(.*)$ checkout.php?s=$1&aid=$2 [L]
+RewriteRule ^checkout/s/(.*)$ checkout.php?s=$1 [L]
+RewriteRule ^department/(.*)/(.*)/s/(.*)$ category.php?categoryId=$2&s=$3 [L]
+
+### Affiliate ID Passing
+RewriteRule ^aid/(.*)$ index.php?aid=$1 [L]
+RewriteRule ^home/aid/(.*)$ index.php?aid=$1 [L]
+RewriteRule ^brands/aid/(.*)$ manufacturers.php?aid=$1 [L]
+RewriteRule ^affiliates/aid/(.*)$ affiliates.php?aid=$1 [L]
+RewriteRule ^brochure/aid/(.*)$ brochure.php?aid=$1 [L]
+RewriteRule ^checkout/aid/(.*)$ checkout.php?aid=$1 [L]
+RewriteRule ^links/aid/(.*)$ links.php?aid=$1 [L]
+RewriteRule ^contact/aid/(.*)$ contact.php?aid=$1 [L]
+RewriteRule ^postalRates/aid/(.*)$ postalRates.php?aid=$1 [L]
+RewriteRule ^privacy/aid/(.*)$ privacy.php?aid=$1 [L]
+RewriteRule ^returns/aid/(.*)$ returns.php?aid=$1 [L]
+RewriteRule ^sitemap/aid/(.*)$ sitemap.php?aid=$1 [L]
+RewriteRule ^tags/aid/(.*)$ tags.php?aid=$1 [L]
+RewriteRule ^terms/aid/(.*)$ terms.php?aid=$1 [L]
+RewriteRule ^(.*)/(.*)/product/(.*)/(.*)/aid/(.*)$ product.php?productId=$4&aid=$5 [L]
+RewriteRule ^(.*)/product/(.*)/(.*)/aid/(.*)$ product.php?productId=$3&aid=$4 [L]
+RewriteRule ^(.*)/(.*)/package/(.*)/(.*)/aid/(.*)$ package.php?packageId=$4&aid=$5 [L]
+RewriteRule ^(.*)/package/(.*)/(.*)/aid/(.*)$ package.php?packageId=$3&aid=$4 [L]
+RewriteRule ^department/(.*)/(.*)/page/(.*)/showAll$ category.php?categoryId=$2&showAll=1 [L]
+RewriteRule ^department/(.*)/(.*)/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)/aid/(.*)$ category.php?categoryId=$4&sortBy=$5&sortDirection=$6&page=$7&aid=$8 [L]
+RewriteRule ^department/(.*)/(.*)/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ category.php?categoryId=$4&sortBy=$6&sortDirection=$7&page=$5&aid=$8 [L]
+RewriteRule ^department/(.*)/(.*)/(.*)/(.*)/page/(.*)/aid/(.*)$ category.php?categoryId=$4&page=$5&aid=$6 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$6&sortBy=$8&sortDirection=$9&page=$7&aid=$10 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$6&sortBy=$7&sortDirection=$8&page=$9&aid=$10 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4&sortBy=$5&sortDirection=$6&page=$7&aid=$8 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4&sortBy=$5&sortDirection=$6&aid=$7 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4&sortBy=$6&sortDirection=$7&page=$5&aid=$8 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/page/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4&page=$5&aid=$6 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4&aid=$5 [L]
+RewriteRule ^brand/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&sortBy=$3&sortDirection=$4&page=$5&aid=$6 [L]
+RewriteRule ^brand/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&sortBy=$4&sortDirection=$5&page=$3&aid=$6 [L]
+RewriteRule ^brand/(.*)/(.*)/page/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&page=$3&aid=$4 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ tag.php?tagId=$2&categoryId=$6&sortBy=$8&sortDirection=$9&page=$7&aid=$10 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)/aid/(.*)$ tag.php?tagId=$2&categoryId=$6&sortBy=$7&sortDirection=$8&page=$9&aid=$10 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)/aid/(.*)$ tag.php?tagId=$2&categoryId=$4&sortBy=$5&sortDirection=$6&page=$7&aid=$8 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ tag.php?tagId=$2&categoryId=$4&sortBy=$5&sortDirection=$6&aid=$7 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ tag.php?tagId=$2&categoryId=$4&sortBy=$6&sortDirection=$7&page=$5&aid=$8 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/page/(.*)/aid/(.*)$ tag.php?tagId=$2&categoryId=$4&page=$5&aid=$6 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/aid/(.*)$ tag.php?tagId=$2&categoryId=$4&aid=$5 [L]
+RewriteRule ^tag/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)/aid/(.*)$ tag.php?tagId=$2&sortBy=$3&sortDirection=$4&page=$5&aid=$6 [L]
+RewriteRule ^tag/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ tag.php?tagId=$2&sortBy=$4&sortDirection=$5&page=$3&aid=$6 [L]
+RewriteRule ^tag/(.*)/(.*)/page/(.*)/aid/(.*)$ tag.php?tagId=$2&page=$3&aid=$4 [L]
+
+
+RewriteRule ^department/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)/aid/(.*)$ category.php?categoryId=$2&sortBy=$3&sortDirection=$4&page=$5&aid=$6 [L]
+RewriteRule ^department/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ category.php?categoryId=$2&sortBy=$4&sortDirection=$5&page=$3&aid=$6 [L]
+RewriteRule ^department/(.*)/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ category.php?categoryId=$2&sortBy=$3&sortDirection=$4&aid=$5 [L]
+RewriteRule ^department/(.*)/(.*)/page/(.*)/aid/(.*)$ category.php?categoryId=$2&page=$3&aid=$4 [L]
+RewriteRule ^department/(.*)/(.*)/aid/(.*)$ category.php?categoryId=$2&aid=$3 [L]
+
+## Tag Pages
+RewriteRule ^tag/(.*)/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ tag.php?tagId=$2&sortBy=$3&sortDirection=$4&aid=$5 [L]
+RewriteRule ^tag/(.*)/(.*)/aid/(.*)$ tag.php?tagId=$2&aid=$3 [L]
+
+## Brand Pages
+RewriteRule ^brand/(.*)/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&sortBy=$3&sortDirection=$4&aid=$5 [L]
+RewriteRule ^brand/(.*)/(.*)/aid/(.*)$ manufacturer.php?manufacturerId=$2&aid=$3 [L]
+
+RewriteRule ^department/(.*)/(.*)/(.*)/(.*)/aid/(.*)$ category.php?categoryId=$4&aid=$5 [L]
+RewriteRule ^department/(.*)/(.*)/(.*)/(.*)/sortBy/(.*)/(.*)/aid/(.*)$ category.php?categoryId=$4&sortBy=$5&sortDirection=$6&aid=$7 [L]
+
+### Product Rules
+RewriteRule ^(.*)/(.*)/product/(.*)/(.*)/addReview$ product.php?productId=$4#addReview [L]
+RewriteRule ^(.*)/product/(.*)/(.*)/addReview$ product.php?productId=$3#addReview [L]
+RewriteRule ^(.*)/(.*)/product/(.*)/(.*)$ product.php?productId=$4 [L]
+RewriteRule ^(.*)/product/(.*)/(.*)$ product.php?productId=$3 [L]
+
+### SKU Rules
+RewriteRule ^(.*)/(.*)/sku/(.*)/(.*)$ product.php?productId=$4&sku=true [L]
+RewriteRule ^(.*)/sku/(.*)/(.*)$ product.php?productId=$3&sku=true [L]
+
+### Package Rules
+RewriteRule ^(.*)/(.*)/package/(.*)/(.*)$ package.php?packageId=$4 [L]
+RewriteRule ^(.*)/package/(.*)/(.*)$ package.php?packageId=$3 [L]
+
+########## Sub Level Category Rules
+RewriteRule ^department/(.*)/(.*)/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)$ category.php?categoryId=$4&sortBy=$5&sortDirection=$6&page=$7 [L]
+RewriteRule ^department/(.*)/(.*)/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)$ category.php?categoryId=$4&sortBy=$6&sortDirection=$7&page=$5 [L]
+RewriteRule ^department/(.*)/(.*)/showAll$ category.php?categoryId=$2&showAll=1 [L]
+RewriteRule ^department/(.*)/(.*)/(.*)/(.*)/page/(.*)$ category.php?categoryId=$4&page=$5 [L]
+
+########## Shop By Brand Rules
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$6&sortBy=$8&sortDirection=$9&page=$7 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$6&sortBy=$7&sortDirection=$8&page=$9 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4&sortBy=$5&sortDirection=$6&page=$7 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4&sortBy=$6&sortDirection=$7&page=$5 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/sortBy/(.*)/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4&sortBy=$5&sortDirection=$6 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/(.*)/(.*)/page/(.*)/showAll$ manufacturer.php?manufacturerId=$2&categoryId=$6&showAll=1 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/showAll$ manufacturer.php?manufacturerId=$2&categoryId=$4&showAll=1 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)/page/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4&page=$5 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4 [L]
+RewriteRule ^brand/(.*)/(.*)/department/(.*)/(.*)$ manufacturer.php?manufacturerId=$2&categoryId=$4 [L]
+RewriteRule ^brand/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)$ manufacturer.php?manufacturerId=$2&sortBy=$3&sortDirection=$4&page=$5 [L]
+RewriteRule ^brand/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)$ manufacturer.php?manufacturerId=$2&sortBy=$4&sortDirection=$5&page=$3 [L]
+RewriteRule ^brand/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)$ manufacturer.php?manufacturerId=$2&sortBy=$4&sortDirection=$5&page=$3 [L]
+RewriteRule ^brand/(.*)/(.*)/sortBy/(.*)/(.*)$ manufacturer.php?manufacturerId=$2&sortBy=$3&sortDirection=$4 [L]
+RewriteRule ^brand/(.*)/(.*)/page/(.*)$ manufacturer.php?manufacturerId=$2&page=$3 [L]
+RewriteRule ^brand/(.*)/(.*)/showAll$ manufacturer.php?manufacturerId=$2&showAll=1 [L]
+RewriteRule ^brand/(.*)/(.*)$ manufacturer.php?manufacturerId=$2 [L]
+
+########## Shop By Tag Rules
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)$ tag.php?tagId=$2&categoryId=$6&sortBy=$8&sortDirection=$9&page=$7 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)$ tag.php?tagId=$2&categoryId=$6&sortBy=$7&sortDirection=$8&page=$9 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)$ tag.php?tagId=$2&categoryId=$4&sortBy=$5&sortDirection=$6&page=$7 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)$ tag.php?tagId=$2&categoryId=$4&sortBy=$6&sortDirection=$7&page=$5 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/sortBy/(.*)/(.*)$ tag.php?tagId=$2&categoryId=$4&sortBy=$5&sortDirection=$6 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/(.*)/(.*)/page/(.*)/showAll$ tag.php?tagId=$2&categoryId=$6&showAll=1 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/showAll$ tag.php?tagId=$2&categoryId=$4&showAll=1 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)/page/(.*)$ tag.php?tagId=$2&categoryId=$4&page=$5 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)$ tag.php?tagId=$2&categoryId=$4 [L]
+RewriteRule ^tag/(.*)/(.*)/department/(.*)/(.*)$ tag.php?tagId=$2&categoryId=$4 [L]
+RewriteRule ^tag/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)$ tag.php?tagId=$2&sortBy=$3&sortDirection=$4&page=$5 [L]
+RewriteRule ^tag/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)$ tag.php?tagId=$2&sortBy=$4&sortDirection=$5&page=$3 [L]
+RewriteRule ^tag/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)$ tag.php?tagId=$2&sortBy=$4&sortDirection=$5&page=$3 [L]
+RewriteRule ^tag/(.*)/(.*)/sortBy/(.*)/(.*)$ tag.php?tagId=$2&sortBy=$3&sortDirection=$4 [L]
+RewriteRule ^tag/(.*)/(.*)/page/(.*)$ tag.php?tagId=$2&page=$3 [L]
+RewriteRule ^tag/(.*)/(.*)/showAll$ tag.php?tagId=$2&showAll=1 [L]
+RewriteRule ^tag/(.*)/(.*)$ tag.php?tagId=$2 [L]
+
+########## Top Level Category Rules
+RewriteRule ^department/(.*)/(.*)/sortBy/(.*)/(.*)/page/(.*)$ category.php?categoryId=$2&sortBy=$3&sortDirection=$4&page=$5 [L]
+RewriteRule ^department/(.*)/(.*)/page/(.*)/sortBy/(.*)/(.*)$ category.php?categoryId=$2&sortBy=$4&sortDirection=$5&page=$3 [L]
+RewriteRule ^department/(.*)/(.*)/sortBy/(.*)/(.*)$ category.php?categoryId=$2&sortBy=$3&sortDirection=$4 [L]
+RewriteRule ^department/(.*)/(.*)/page/(.*)$ category.php?categoryId=$2&page=$3 [L]
+RewriteRule ^department/(.*)/(.*)$ category.php?categoryId=$2 [L]
+
+RewriteRule ^department/(.*)/(.*)/(.*)/(.*)$ category.php?categoryId=$4[L]
+RewriteRule ^department/(.*)/(.*)/(.*)/(.*)/sortBy/(.*)/(.*)$ category.php?categoryId=$4&sortBy=$5&sortDirection=$6 [L]
+

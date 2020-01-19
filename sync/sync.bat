@@ -1,0 +1,1 @@
+c:\wamp\bin\php\php5.2.6\php.exe -f D:\websites\deepblue08\dive\sync\sync.php

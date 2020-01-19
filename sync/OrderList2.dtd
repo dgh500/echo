@@ -1,0 +1,278 @@
+<!ELEMENT	OrderList (Order*) >
+
+<!ATTLIST       OrderList
+                StoreAccountName CDATA #REQUIRED>
+
+
+<!ELEMENT       Order (Time,
+		       NumericTime,
+		       Referer?,
+		       Entry-Point?,
+		       AddressInfo*,
+                       IPAddress?,
+		       Shipping?,
+		       CreditCard?,
+		       Comments?,
+		       Coupon?,
+		       YahooLogin?,
+		       Cookie?,
+		       Item*,
+		       Total,
+		       Trackable-Link?,
+		       Yahoo-Shopping-Order?,
+		       Space-Id?,
+		       Bogus?,
+		       OSBS?,
+		       Warning?,
+		       Suspect?,
+		       Store-Status?,
+		       HTTP-User-Agent?,
+		       GiftWrap?,
+		       GiftWrapMessage?,
+		       CardEvents?
+		       )>
+<!ATTLIST	Order
+		id CDATA #REQUIRED
+		currency CDATA #REQUIRED
+		>
+
+
+<!ELEMENT	Time (#PCDATA)>
+<!-- The printed time, in the same format that HTTP uses. Always uses GMT.
+     For example: <Time>Mon Sep 11 18:16:07 2000 GMT</Time>. -->
+
+<!ELEMENT	NumericTime (#PCDATA)>
+<!-- A Unix time_t -->
+
+<!ELEMENT	Referer (#PCDATA)>
+
+<!ELEMENT	Entry-Point (#PCDATA)>
+
+<!ELEMENT	AddressInfo (Name,
+                             Company?,
+			     Address1?,
+			     Address2?,
+			     City?,
+			     State?,
+			     Country?,
+			     Zip?,
+			     Phone?,
+			     Email?,
+			     Custom*
+			     )>
+<!ATTLIST	AddressInfo
+		type (ship|bill) #REQUIRED
+		>
+
+
+<!ELEMENT	Name (First,
+		      Last,
+		      Full
+		      )>
+<!ELEMENT	First (#PCDATA)>
+<!ELEMENT	Last (#PCDATA)>
+<!ELEMENT	Full (#PCDATA)>
+<!-- You have your choice about whether you want name separated or split.
+     The order form can be set to accept either. When it accepts a single
+     name field, the separation into First and Last is a guess. When it accepts
+     separate names, the Full is the concatenation of the two.
+     Example:
+     <Name><First>Lance</First><Last>Thunderfart</Last><Full>Lance Thunderfart</Full></Name>
+     -->
+
+<!ELEMENT	Company (#PCDATA)>
+
+<!ELEMENT	Address1 (#PCDATA)>
+
+<!ELEMENT	Address2 (#PCDATA)>
+
+<!ELEMENT	City (#PCDATA)>
+
+<!ELEMENT	State (#PCDATA)>
+
+<!ELEMENT	Country (#PCDATA)>
+<!-- Country will always start with a standard ISO-3166 code, and is normally followed by
+     the full name of the country.
+     An exception is that we use UK (rather than the ISO-3166 standard GB) for England.
+     This follows the Internet TLD practice.
+     Example: <Country>US United States</Country> -->
+
+<!ELEMENT	Zip (#PCDATA)>
+
+<!ELEMENT	Phone (#PCDATA)>
+
+<!ELEMENT	Email (#PCDATA)>
+
+
+<!ELEMENT	Custom (#PCDATA)>
+<!ATTLIST	Custom
+		name CDATA #REQUIRED
+		>
+
+<!ELEMENT	IPAddress (#PCDATA)>
+
+<!ELEMENT	Shipping (#PCDATA)>
+
+
+<!ELEMENT	CreditCard (#PCDATA)>
+<!-- CreditCard will be at most 16 digits for standard credit cards,
+     but some merchants also accept PO numbers or other codes in
+     here which have no particular constraints.
+     The number is guaranteed to have all non-alphanumerics removed. -->
+<!ATTLIST	CreditCard
+		type CDATA #REQUIRED
+		expiration CDATA #REQUIRED
+		>
+
+<!ELEMENT	Comments (#PCDATA)>
+<!-- The contents of the Comments box on the order form, if present -->
+
+<!ELEMENT	Coupon (Id?,
+		        Description?,
+			Value?
+			)>
+
+<!ELEMENT	Value (#PCDATA)>
+
+<!ELEMENT	YahooLogin (#PCDATA)>
+<!-- YahooLogin is limited to 63 characters, but is not normally included
+     for privacy reasons. This is only used for Yahoo-internal order feeds. -->
+<!ELEMENT	Cookie EMPTY>
+<!-- These cookies are not normally included for privacy reasons. 
+     They are only used for Yahoo-internal order feeds. -->
+<!ATTLIST	Cookie
+		B CDATA #REQUIRED
+		Y CDATA #REQUIRED			
+		>
+
+<!-- This should probably be named LineItem. It represents one entry
+     on the order form -->
+<!ELEMENT	Item (Id,
+		      Code,
+		      Quantity,
+		      Unit-Price,
+		      Description,
+		      Url,
+		      Taxable,
+		      Thumb?,
+		      Option*,
+		      OptionLists?
+		      )>
+<!ATTLIST	Item
+		num CDATA #IMPLIED
+		>
+
+
+<!ELEMENT	Id (#PCDATA)>
+<!-- Id limited to 255 characters -->
+
+<!ELEMENT	Code (#PCDATA)>
+<!-- No limit on code -->
+
+<!ELEMENT	Quantity (#PCDATA)>
+<!-- Quantity limited to 9 digits -->
+
+<!ELEMENT	Unit-Price (#PCDATA)>
+
+<!ELEMENT	Description (#PCDATA)>
+<!-- No length limit -->
+
+<!ELEMENT	Url (#PCDATA)>
+<!-- Limited to 1024 characters -->
+
+<!ELEMENT	Taxable (#PCDATA)>
+<!-- Value will be YES or NO -->
+
+<!ELEMENT	Thumb (#PCDATA)>
+<!-- An HTML tag for a thumbnail image -->
+
+<!ELEMENT	OptionLists  (OptionList*)>
+<!ELEMENT	OptionList	 (OptionValue*)>
+<!ATTLIST	OptionList
+		name CDATA #REQUIRED
+>
+
+<!ELEMENT	OptionValue (#PCDATA)>
+
+<!ELEMENT	Option (#PCDATA)>
+<!ATTLIST	Option
+		name CDATA #REQUIRED
+		>
+
+
+<!--
+In an effort to programatically access the Line items, we provide
+a canonical type attribute which will be one of the enumerated
+values listed below.
+-->
+<!ELEMENT	Total (Line*)>
+<!ELEMENT	Line (#PCDATA)>
+<!ATTLIST	Line
+		type (GiftWrap|Discount|MiscAdjustment|Coupon|GiftCertificate|Subtotal|TaxableAmt|NonTaxableAmt|Shipping|Tax|Credit|Total) #IMPLIED
+		name CDATA #REQUIRED
+		notes CDATA #IMPLIED
+		>
+
+
+<!ELEMENT	Trackable-Link EMPTY>
+<!ATTLIST	Trackable-Link
+		description CDATA #REQUIRED
+		id CDATA #REQUIRED
+		>
+
+
+<!ELEMENT	Yahoo-Shopping-Order EMPTY>
+<!-- This tag appears when the order is through Shopping, and doesn't appear otherwise -->
+
+<!ELEMENT	Space-Id (#PCDATA)>
+<!-- For Shopping orders, this tag identifies a specific page or category within Shopping --> 
+
+<!ELEMENT	Bogus EMPTY>
+<!-- This tag appears when the order is bogus, and doesn't appear otherwise -->
+
+<!ELEMENT	OSBS EMPTY>
+<!-- This tag appears when the order processing needs to be triggered by OSBS, and doesn't appear otherwise -->
+
+<!ELEMENT	Warning (#PCDATA)>
+
+<!ELEMENT	Suspect (#PCDATA)>
+
+<!ELEMENT	Store-Status (#PCDATA)>
+<!-- Not included except in Yahoo-internal feeds -->
+
+<!ELEMENT	HTTP-User-Agent (#PCDATA)>
+<!-- Not included except in Yahoo-internal feeds -->
+<!ATTLIST	HTTP-User-Agent
+		ip CDATA #REQUIRED
+		http-user-agent CDATA #REQUIRED
+		>
+
+
+<!ELEMENT	GiftWrap EMPTY>
+<!ELEMENT	GiftWrapMessage (#PCDATA)>
+<!ELEMENT	CardEvents (CardAuth?,
+			    CardEvent*
+			    )>
+
+
+<!ELEMENT	CardAuth EMPTY>
+<!ATTLIST	CardAuth
+		fail-reason CDATA #IMPLIED
+		approval-number CDATA #IMPLIED
+		auth-response CDATA #IMPLIED
+		avs-response CDATA #IMPLIED
+		cvv-response CDATA #IMPLIED
+		amount CDATA #IMPLIED
+		paypal-auth CDATA #IMPLIED
+		paypal-payer-status CDATA #IMPLIED
+		paypal-address-status CDATA #IMPLIED
+		>
+
+
+<!ELEMENT	CardEvent EMPTY>
+<!ATTLIST	CardEvent
+		type (Charge|Return|VoidCharge|VoidReturn|Capture|Refund|Void|ReAuth) #REQUIRED
+		amount CDATA #REQUIRED
+		paypal-auth CDATA #IMPLIED
+		paypal-txid CDATA #IMPLIED
+		>

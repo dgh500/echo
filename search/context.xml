@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomSearchEngine id="wa4ohidg-0m" creator="014702420738954264605"
+	keywords="" language="en">
+	<Title>Deep Blue Search Engine</Title>
+	<Description>Deep Blue Search Engine</Description>
+	<Context>
+		<BackgroundLabels>
+			<Label name="_cse_wa4ohidg-0m" mode="FILTER" />
+			<Label name="_cse_exclude_wa4ohidg-0m" mode="ELIMINATE" />
+		</BackgroundLabels>
+
+	</Context>
+	<LookAndFeel nonprofit="false">
+		<Logo url="http://www.deepbluedive.com/images/DBsite06_72dpi_09.gif"
+			height="100" />
+	</LookAndFeel>
+	<AdSense />
+	<EnterpriseAccount>
+		<AccountAdmin first_name="Dave" last_name="Huscroft"
+			email="dgh500@gmail.com" phone="0191 2536220" country="GB" job_title="Systems Admin" />
+		<Organization name="Deep Blue Dive Centre" type="business"
+			size="50" />
+	</EnterpriseAccount>
+</CustomSearchEngine>

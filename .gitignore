@@ -1,0 +1,14 @@
+#ignore non-core files
+blog/
+.svn/
+.bzr/
+_notes/
+images/
+phpMailer/
+test/
+tests/
+language/
+examples/
+newsletter/
+sesh/
+uploadImages/

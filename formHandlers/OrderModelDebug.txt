@@ -1,0 +1,79 @@
+Original Products:
+
+- [0]PhD Nutrition Lean Degree
+
+- [1]PhD Nutrition Lean Degree
+
+- [2]PhD Pharma Whey (2.27KG)
+
+- [3]PhD Pharma Whey (2.27KG)
+
+Added Package: PhD Pharma Whey &amp; Lean Degree Stack
+
+- Looking At Product: PhD Nutrition Lean Degree
+
+  - Looking At SKU: 1393642
+
+    - Found SKU (Item): 1393642, Key = 0
+
+
+Products after product: PhD Nutrition Lean Degree
+
+- [0]PhD Nutrition Lean Degree
+
+- [1]PhD Pharma Whey (2.27KG)
+
+- [2]PhD Pharma Whey (2.27KG)
+
+- Looking At Product: PhD Pharma Whey (2.27KG)
+
+  - Looking At SKU: 1393562
+
+  - Looking At SKU: 1393620
+
+  - Looking At SKU: 1393621
+
+  - Looking At SKU: 1393622
+
+  - Looking At SKU: 1393623
+
+    - Found SKU (Item): 1393623, Key = 1
+
+
+Products after product: PhD Pharma Whey (2.27KG)
+
+- [0]PhD Nutrition Lean Degree
+
+- [1]PhD Pharma Whey (2.27KG)
+
+Added Package: PhD Pharma Whey &amp; Lean Degree Stack
+
+- Looking At Product: PhD Nutrition Lean Degree
+
+  - Looking At SKU: 1393642
+
+    - Found SKU (Item): 1393642, Key = 0
+
+
+Products after product: PhD Nutrition Lean Degree
+
+- [0]PhD Pharma Whey (2.27KG)
+
+- Looking At Product: PhD Pharma Whey (2.27KG)
+
+  - Looking At SKU: 1393562
+
+  - Looking At SKU: 1393620
+
+  - Looking At SKU: 1393621
+
+  - Looking At SKU: 1393622
+
+  - Looking At SKU: 1393623
+
+    - Found SKU (Item): 1393623, Key = 0
+
+
+Products after product: PhD Pharma Whey (2.27KG)
+
+Products after packages:

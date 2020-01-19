@@ -1,0 +1,6 @@
+<?php
+// Specify admin colours
+
+
+
+?>

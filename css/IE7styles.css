@@ -1,0 +1,19 @@
+#rightCol #homepage img {
+	position: relative;
+	left: -5px;
+}
+#rightCol {
+	overflow: hidden;
+}
+
+.speechBubble {
+	margin-left: 25px;
+}
+.starsBox {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.reviewerName {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}

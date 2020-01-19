@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderList StoreAccountName="Deep Blue Dive">
+	<Order id="ECHO51370">
+		<Time>25 November 2008 11:49:11</Time>
+		<ShipTime>25 November 2008 11:49:11</ShipTime>
+		<NumericTime>1227613751</NumericTime>
+		<AddressInfo type="ship">
+			<Name>
+				<First>Cathy</First>
+				<Last>Taylor</Last>
+				<Full>Cathy Taylor</Full>
+			</Name>
+			<Company>Butterfingers Ltd</Company>
+			<Address1>Main Street</Address1>
+			<Address2>Grange-over-Sands</Address2>
+			<City>
+			</City>
+			<State>Cumbria</State>
+			<Country>United Kingdom</Country>
+			<Zip>LA116DP</Zip>
+			<Phone>015395 32771</Phone>
+		</AddressInfo>
+		<AddressInfo type="bill">
+			<Name>
+				<First>Cathy</First>
+				<Last>Taylor</Last>
+				<Full>Cathy Taylor</Full>
+			</Name>
+			<Company>
+			</Company>
+			<Address1>54</Address1>
+			<Address2>Kirkhead Road</Address2>
+			<City>Grange-over-Sands</City>
+			<State></State>
+			<Country>United Kingdom</Country>
+			<Zip>LA117DD</Zip>
+			<Phone>015395 32771</Phone>
+		</AddressInfo>
+		<Shipping />
+		<CreditCard />
+		<Item num="0">
+			<Id>1389145</Id>
+			<Code>FINMARSUP4</Code>
+			<Quantity>1</Quantity>
+			<Unit-Price>49</Unit-Price>
+			<Url />
+			<Taxable>YES</Taxable>
+			<Tax>7.3</Tax>
+			<Description>mares-avanti-superchannel-fins-with-free-gloves</Description>
+			<Shipping>0.00</Shipping>
+			<Shipping-Tax>0.00</Shipping-Tax>
+		</Item>
+		<Total>
+			<Line name="Shipping">5.95</Line>
+			<Line name="ShippingTax">0.00</Line>
+			<Line name="Total">49</Line>
+		</Total>
+		<Item num="1">
+			<Id>1379958</Id>
+			<Code>GLV5MMXLAR</Code>
+			<Quantity>1</Quantity>
+			<Unit-Price>9.95</Unit-Price>
+			<Url />
+			<Taxable>YES</Taxable>
+			<Tax>1.48</Tax>
+			<Description>ndiver-5mm-gloves</Description>
+			<Shipping>0.00</Shipping>
+			<Shipping-Tax>0.00</Shipping-Tax>
+		</Item>
+		<Total>
+			<Line name="Shipping">5.95</Line>
+			<Line name="ShippingTax">0.00</Line>
+			<Line name="Total">9.95</Line>
+		</Total>
+		<Item num="2">
+			<Id>1389472</Id>
+			<Code>BAGMAR3</Code>
+			<Quantity>1</Quantity>
+			<Unit-Price>4.95</Unit-Price>
+			<Url />
+			<Taxable>YES</Taxable>
+			<Tax>0.74</Tax>
+			<Description>mares-cruise-pearl</Description>
+			<Shipping>0.00</Shipping>
+			<Shipping-Tax>0.00</Shipping-Tax>
+		</Item>
+		<Total>
+			<Line name="Shipping">5.95</Line>
+			<Line name="ShippingTax">0.00</Line>
+			<Line name="Total">4.95</Line>
+		</Total>
+		<Item num="3">
+			<Id>1378831</Id>
+			<Code>BAGBVFIN</Code>
+			<Quantity>1</Quantity>
+			<Unit-Price>14.95</Unit-Price>
+			<Url />
+			<Taxable>YES</Taxable>
+			<Tax>2.23</Tax>
+			<Description>fin-bag</Description>
+			<Shipping>0.00</Shipping>
+			<Shipping-Tax>0.00</Shipping-Tax>
+		</Item>
+		<Total>
+			<Line name="Shipping">5.95</Line>
+			<Line name="ShippingTax">0.00</Line>
+			<Line name="Total">14.95</Line>
+		</Total>
+	</Order>
+</OrderList>
